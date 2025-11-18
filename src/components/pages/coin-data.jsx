@@ -6,6 +6,7 @@ import CoinDataInfo from "../CoinDataInfo";
 import CoinLinks from "../CoinLinks";
 import CoinPriceChart from "../CoinPriceChart";
 import CoinMarketCap from "../CoinMarketCapChart";
+import CoinGecko from "../CoinGecko";
 const CoinData = ({ coinAPI }) => {
   const { id } = useParams();
   const [coinData, setCoinData] = useState([]);
@@ -62,22 +63,27 @@ const CoinData = ({ coinAPI }) => {
           {/* Coin Data / Info */}
           {
             <div className="coin" key={coinData.id}>
-            <CoinHeader coinData={coinData} />
-             <div className="coin-graph">
-              <h2 id="coin-graph-title">Chart Info</h2>
-              <div className="graphs">
-              <>
-              <CoinPriceChart coinID={coinData.id} />
-              </>
-              <><CoinMarketCap coinID={coinData.id} /></>
+              <CoinHeader coinData={coinData} />
+              <div className="coin-graph">
+                <h2 id="coin-graph-title">Chart Info</h2>
+                <div className="graphs">
+                  <>
+                    <CoinPriceChart coinID={coinData.id} />
+                  </>
+                  <>
+                    <CoinMarketCap coinID={coinData.id} />
+                  </>
+                </div>
               </div>
-             </div>
               <div className="coins-info">
                 <CoinDataInfo coinData={coinData} />
               </div>
-            <CoinLinks coinData={coinData} />
+              <CoinLinks coinData={coinData} />
             </div>
           }
+          <div id="logo" style={{ display: "flex", justifyContent: "center" }}>
+            <CoinGecko />
+          </div>
         </main>
       )}
     </>

@@ -3,6 +3,7 @@ import CoinCard  from "../CoinCard";
 import CoinFilterInput from "../CoinFilterInput";
 import CoinLimitSelect from "../CoinLimitSelect";
 import CoinsSort from "../CoinsSort";
+import CoinGecko from "../CoinGecko";
 import { ScaleLoader } from 'react-spinners';
 const HomePage = ({
     coins,
@@ -68,6 +69,9 @@ const HomePage = ({
           }) : <p>No coin matched for the following search...</p>}
         </main>
       )}
+      <div id="logo" style={{display: 'flex', justifyContent:'center'}}>
+      <CoinGecko bgColor={'#fff'} txtColor={'#0e1117'} />
+      </div>
     </div>
      );
 }

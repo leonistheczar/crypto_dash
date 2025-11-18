@@ -1,3 +1,4 @@
+import CoinGecko from "../CoinGecko";
 import "../../index.css";
 import { Link } from "react-router";
 const AboutPage = () => {
@@ -42,6 +43,9 @@ const AboutPage = () => {
       <Link to="/" id="return-dash" className="top-nav-link">
         Go to Dashboard 🏠
       </Link>
+      <div id="logo" style={{display: 'flex', justifyContent:'center'}}>
+      <CoinGecko bgColor={'#fff'} txtColor={'#0e1117'} />
+      </div>
     </div>
     </>
   );
