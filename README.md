@@ -3,7 +3,7 @@
 A cryptocurrency tracking dashboard built with React and Vite, powered by the CoinGecko API.
 
 ## Project Link
-`https://crypto-dash-five-beta.vercel.app/`
+(https://crypto-dash-five-beta.vercel.app/)
 
 ## Features
 
