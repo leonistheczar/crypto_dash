@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <>      <div className="header">
         <Link to="/">
-          <h1 className="title-tag">🚀 Cypto Dash</h1>
+          <h1 className="title-tag">🚀 Crypto Dash</h1>
         </Link>
         <div className="top-nav">
           <Link to="/">Home</Link>
